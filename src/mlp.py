@@ -47,14 +47,20 @@ class MLP:
         self.b1 -= self.lr * db1
 
     def train(self, X, y, epochs=50):
+        losses = []
         for epoch in range(epochs):
             y_pred = self.forward(X)
             loss = binary_cross_entropy(y, y_pred)
+            losses.append(float(loss))
             self.backward(X, y)
 
             if epoch % 5 == 0:
                 print(f"Epoch {epoch}, Loss: {loss:.4f}")
 
+        return losses
+
     def predict(self, X):
         probs = self.forward(X)
         return (probs >= 0.5).astype(int)
+
+
