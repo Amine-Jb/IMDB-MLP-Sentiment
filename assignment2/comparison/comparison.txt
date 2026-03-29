@@ -1,0 +1,35 @@
+IMDB Sentiment Analysis — Model Comparison
+
+Assignment 1 (Baseline):
+- MLP (VADER + TextBlob features): 70.82%
+
+Assignment 2 Models:
+
+1. MLP + TF-IDF:
+- Accuracy: 86.64%
+
+2. 1D CNN:
+- Accuracy: 87.89%
+
+3. Hybrid CNN:
+- Accuracy: 86.96%
+
+4. LSTM:
+- Accuracy: 69.12%
+
+
+Analysis:
+
+The Assignment 2 models significantly improved over the Assignment 1 baseline.
+
+The 1D CNN achieved the best performance (87.89%), slightly outperforming both the TF-IDF MLP and the Hybrid CNN. This suggests that convolutional models are effective at capturing local sentiment patterns such as key phrases.
+
+The MLP with TF-IDF also performed very well (86.64%), demonstrating that feature-based approaches can remain highly competitive.
+
+The Hybrid CNN achieved similar performance (86.96%), showing that adding additional layers and regularization can maintain strong results.
+
+The LSTM model performed worse in this experiment (69.12%). This is likely due to limited hyperparameter tuning and training time. Recurrent models typically require more careful optimization and longer training to reach their full potential.
+
+Conclusion:
+
+Overall, the experiments show that both TF-IDF-based models and CNN-based architectures significantly outperform the baseline. Among the tested models, the 1D CNN provided the best trade-off between performance and complexity.

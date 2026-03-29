@@ -1,0 +1,11 @@
+Model: 1D CNN (PyTorch)
+Accuracy: 0.8789
+Accuracy Percent: 87.89%
+Vocabulary Size: 12000
+Sequence Length: 250
+Embedding Dimension: 128
+Number of Filters: 128
+Kernel Size: 5
+Dropout: 0.3
+Epochs: 4
+Optimizer: Adam

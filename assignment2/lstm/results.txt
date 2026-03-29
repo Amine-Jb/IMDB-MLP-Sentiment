@@ -1,0 +1,10 @@
+Model: LSTM (PyTorch)
+Accuracy: 0.6912
+Accuracy Percent: 69.12%
+Vocabulary Size: 12000
+Sequence Length: 250
+Embedding Dimension: 128
+Hidden Dimension: 128
+Dropout: 0.3
+Epochs: 4
+Optimizer: Adam

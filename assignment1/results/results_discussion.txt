@@ -1,0 +1,19 @@
+Results Discussion
+
+Features:
+- VADER compound polarity
+- TextBlob polarity
+
+Model:
+- MLP from scratch (forward pass, BCE loss, backprop, gradient descent)
+- Input: 2 features
+- Hidden: 8 tanh
+- Output: sigmoid
+
+Performance:
+- Test Accuracy: 0.7082
+
+Notes:
+Accuracy is limited because the model only sees 2 sentiment scores rather than the full text.
+Errors occur with sarcasm, mixed sentiment, and lexicon disagreement.
+Loss decreases across epochs, indicating correct gradient-based learning.

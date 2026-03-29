@@ -1,0 +1,8 @@
+Model: MLP with TF-IDF features
+Accuracy: 0.8664
+Accuracy Percent: 86.64%
+Input Features: TF-IDF (max_features=5000, stop_words='english')
+Hidden Layer: 128 neurons
+Activation: ReLU
+Optimizer: Adam
+Max Iterations: 20

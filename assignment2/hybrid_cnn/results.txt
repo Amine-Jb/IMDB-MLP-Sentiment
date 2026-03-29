@@ -1,0 +1,12 @@
+Model: Hybrid CNN (PyTorch)
+Accuracy: 0.8696
+Accuracy Percent: 86.96%
+Vocabulary Size: 12000
+Sequence Length: 250
+Embedding Dimension: 128
+Number of Filters: 128
+Kernel Size: 5
+Hidden Layer: 64
+Dropout: 0.3
+Epochs: 4
+Optimizer: Adam
